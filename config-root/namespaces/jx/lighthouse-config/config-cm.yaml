@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         docttus/jenkins-cluster: true
+        mok-colombia/jenkins-node: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +21,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         docttus/jenkins-cluster: merge
+        mok-colombia/jenkins-node: merge
       queries:
       - labels:
         - approved
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - docttus/jenkins-cluster
+        - mok-colombia/jenkins-node
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - docttus/jenkins-cluster
+        - mok-colombia/jenkins-node
       target_url: http://lighthouse-jx.52.73.99.16.nip.io/merge/status
 kind: ConfigMap
 metadata:
