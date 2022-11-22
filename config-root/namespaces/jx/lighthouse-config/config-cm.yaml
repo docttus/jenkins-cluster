@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - docttus/jenkins-cluster
-      target_url: http://lighthouse-jx./merge/status
+      target_url: http://lighthouse-jx.52.73.99.16.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null
