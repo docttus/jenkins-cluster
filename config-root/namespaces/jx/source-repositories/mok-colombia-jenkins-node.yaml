@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: mok-colombia
+    provider: github
+    repository: jenkins-node
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: mok-colombia-jenkins-node
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/mok-colombia/jenkins-node.git
+  org: mok-colombia
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jenkins-node
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/mok-colombia/jenkins-node
